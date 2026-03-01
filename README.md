@@ -336,3 +336,27 @@ python3 02_python_repeat_analysis.py
 
 ## ✍️ Author
 **Abid Hussain** | NUST Genomics | March 1, 2026
+
+---
+
+## 📊 Generated Output Files
+
+### Visualization Results
+- **repeat_analysis_comparison.png** (405 KB)
+  - 4 comparative charts showing repeat analysis across 3 species
+  - Generated from Google Colab analysis
+  - Shows: Repeat %, Tandem Repeats, Homopolymers, Summary Table
+
+### Data Results
+- **repeat_detection_summary.csv**
+  - Complete analysis metrics for all 3 species
+  - Columns: Species, Total BP, Tandem Repeats, Homopolymers, Low-Complexity Regions, Total Repeat BP, Repeat %
+
+### Example Output
+```
+Species,Total BP,Tandem Repeats,Homopolymers,Low-Complexity Regions,Total Repeat BP,Repeat %
+Human,16569,112,114,4,1324,7.99
+Chimp,16554,96,117,9,1196,7.22
+Gorilla,16412,138,124,24,1576,9.6
+```
+
