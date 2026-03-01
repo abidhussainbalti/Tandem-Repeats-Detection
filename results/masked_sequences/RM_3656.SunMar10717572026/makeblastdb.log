@@ -1,0 +1,16 @@
+
+
+Building a new DB, current time: 03/01/2026 07:18:00
+New DB name:   /home/abidhussain/nust-genomics-repeat-analysis/results/masked_sequences/RM_3656.SunMar10717572026/RMRBMeta.embl
+New DB title:  /home/abidhussain/RepeatMasker/Libraries/RMRBMeta.embl
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 3000000000B
+Warning: [makeblastdb] 
+Input file /home/abidhussain/RepeatMasker/Libraries/RMRBMeta.embl does NOT appear to be FASTA (processing anyway).
+Advise validating database with 'blastdbcheck -dbtype [prot|nucl] -db ${DBNAME}'
+
+
+No volumes were created.
+
+BLAST Database creation error: Input doesn't start with a defline or comment around line 1
