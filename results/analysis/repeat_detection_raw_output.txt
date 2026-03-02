@@ -2,13 +2,31 @@
 ================================================================================
 PYTHON-BASED REPEAT DETECTION ANALYSIS - Primate mtDNA
 ================================================================================
-Error processing Human: [Errno 2] No such file or directory: '../inputs/human_mtdna.fasta'
-Error processing Chimp: [Errno 2] No such file or directory: '../inputs/chimp_mtdna.fasta'
-Error processing Gorilla: [Errno 2] No such file or directory: '../inputs/gorilla_mtdna.fasta'
+
+Human mtDNA Analysis:
+  Total BP: 16,569
+  Tandem Repeats Found: 112
+  Homopolymer Runs Found: 114
+  Low-Complexity Regions: 4
+  Total Repeat BP: 1,324
+  Repeat Content: 7.99%
+
+Chimp mtDNA Analysis:
+  Total BP: 16,554
+  Tandem Repeats Found: 96
+  Homopolymer Runs Found: 117
+  Low-Complexity Regions: 9
+  Total Repeat BP: 1,196
+  Repeat Content: 7.22%
+
+Gorilla mtDNA Analysis:
+  Total BP: 16,412
+  Tandem Repeats Found: 138
+  Homopolymer Runs Found: 124
+  Low-Complexity Regions: 24
+  Total Repeat BP: 1,576
+  Repeat Content: 9.6%
 
 ================================================================================
-Traceback (most recent call last):
-  File "/home/abidhussain/nust-genomics-repeat-analysis/scripts/02_python_repeat_analysis.py", line 135, in <module>
-    with open('../results/analysis/repeat_detection_summary.csv', 'w') as f:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../results/analysis/repeat_detection_summary.csv'
+✅ Analysis complete!
+✅ Results saved to: results/analysis/repeat_detection_summary.csv
