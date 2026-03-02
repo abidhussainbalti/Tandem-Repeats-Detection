@@ -1,10 +1,4 @@
-# Ignore large files
-*.fq
-*.fastq
-*.bam
-*.bam.bai
-*.sam
-*.vcf
+# Temporary files
 *.log
 __pycache__/
 .ipynb_checkpoints/
@@ -12,6 +6,12 @@ __pycache__/
 .DS_Store
 .vscode/
 .idea/
-*.egg-info/
-dist/
-build/
+
+# Large intermediate files
+*.fq
+*.fastq
+*.bam
+*.bam.bai
+*.sam
+*.vcf
+logs/

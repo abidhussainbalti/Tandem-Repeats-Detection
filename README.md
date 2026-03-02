@@ -16,13 +16,26 @@
 nust-genomics-repeat-analysis/
 ├── README.md & METHODOLOGY.md
 ├── requirements.txt & .gitignore
-├── inputs/ (3 mtDNA FASTA sequences)
-├── scripts/ (Python repeat analysis script)
+│
+├── inputs/
+│   ├── human_mtdna.fasta (16,569 bp)
+│   ├── chimp_mtdna.fasta (16,554 bp)
+│   ├── gorilla_mtdna.fasta (16,412 bp)
+│   └── combined_mtdna.fasta (all 3 sequences)
+│
+├── scripts/
+│   └── 02_python_repeat_analysis.py
+│
 ├── results/
-│   ├── analysis/ (CSV summary + PNG visualizations)
-│   └── masked_sequences/ (RepeatMasker logs for reference)
-├── logs/ (execution logs)
-└── colab/ (analysis notebook)
+│   └── analysis/
+│       ├── repeat_detection_summary.csv
+│       ├── repeat_analysis_comparison.png
+│       └── figures/ (visualization outputs)
+│
+├── logs/ (execution logs - not tracked in git)
+│
+└── colab/
+    └── tendem_repeat_analysis_visualization.ipynb
 ```
 
 ---
@@ -31,11 +44,13 @@ nust-genomics-repeat-analysis/
 
 **Mitochondrial DNA from 3 Primate Species:**
 
-| Organism | Length | Repeat Content |
-|----------|--------|-----------------|
-| Human | 16,569 bp | 7.99% |
-| Chimpanzee | 16,554 bp | 7.22% |
-| Gorilla | 16,412 bp | 9.60% |
+| Organism | Length | Repeat Content | File |
+|----------|--------|-----------------|------|
+| Human | 16,569 bp | 7.99% | human_mtdna.fasta |
+| Chimpanzee | 16,554 bp | 7.22% | chimp_mtdna.fasta |
+| Gorilla | 16,412 bp | 9.60% | gorilla_mtdna.fasta |
+
+**Combined file:** combined_mtdna.fasta (all 3 sequences)
 
 ---
 
@@ -87,8 +102,10 @@ nust-genomics-repeat-analysis/
 
 ## 🚀 Quick Start
 ```bash
+# Install dependencies
+pip install -r requirements.txt
+
 # Run repeat analysis
-cd nust-genomics-repeat-analysis
 python3 scripts/02_python_repeat_analysis.py
 
 # View results
@@ -100,6 +117,11 @@ cat results/analysis/repeat_detection_summary.csv
 ---
 
 ## 📊 Analysis Results
+
+**Output Files:**
+- `repeat_detection_summary.csv` - Detailed metrics for each species
+- `repeat_analysis_comparison.png` - 4-panel visualization
+- `figures/` - Additional analysis plots
 
 **Repeat Content Comparison:**
 - Human: 230 total repeats (7.99% of genome)
@@ -115,22 +137,21 @@ cat results/analysis/repeat_detection_summary.csv
 
 ## 📈 Visualizations
 
-**File:** `results/analysis/repeat_analysis_comparison.png`
+**Main Visualization:** `results/analysis/repeat_analysis_comparison.png`
 - Panel 1: Repeat content % across species
 - Panel 2: Tandem vs Homopolymers count
 - Panel 3: Type distribution (stacked bars)
 - Panel 4: Summary statistics table
 
-**CSV:** `results/analysis/repeat_detection_summary.csv`
-- Detailed metrics for each species
-- All repeat types counted
+**Colab Notebook:** `colab/tendem_repeat_analysis_visualization.ipynb`
+- Interactive analysis and visualization generation
 
 ---
 
 ## 🔄 Reproducibility
 ```bash
-# Install Python (if needed)
-python3 --version
+# Install dependencies
+pip install -r requirements.txt
 
 # Run analysis
 python3 scripts/02_python_repeat_analysis.py
