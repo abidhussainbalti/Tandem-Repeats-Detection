@@ -1,9 +1,17 @@
-*.tar.gz
-*.zip
+# Ignore large files
+*.fq
+*.fastq
+*.bam
+*.bam.bai
+*.sam
+*.vcf
+*.log
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
 .DS_Store
 .vscode/
 .idea/
-*.bak
+*.egg-info/
+dist/
+build/
