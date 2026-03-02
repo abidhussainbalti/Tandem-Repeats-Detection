@@ -1,0 +1,14 @@
+
+================================================================================
+PYTHON-BASED REPEAT DETECTION ANALYSIS - Primate mtDNA
+================================================================================
+Error processing Human: [Errno 2] No such file or directory: '../inputs/human_mtdna.fasta'
+Error processing Chimp: [Errno 2] No such file or directory: '../inputs/chimp_mtdna.fasta'
+Error processing Gorilla: [Errno 2] No such file or directory: '../inputs/gorilla_mtdna.fasta'
+
+================================================================================
+Traceback (most recent call last):
+  File "/home/abidhussain/nust-genomics-repeat-analysis/scripts/02_python_repeat_analysis.py", line 135, in <module>
+    with open('../results/analysis/repeat_detection_summary.csv', 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../results/analysis/repeat_detection_summary.csv'
